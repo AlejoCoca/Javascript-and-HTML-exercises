@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+ var suma1=0, suma2=0, i=0;
+ while(i<3)
+ {
+	valor=parseInt(prompt(('Ingrese un elemento de la lista 1'),''));
+	suma1+=valor;
+	i++;
+ }
+ i=0;
+ while(i<3)
+ {
+	valor=parseInt(prompt(('Ingrese un elemento de la lista 2'),''));
+	suma2+=valor;
+	i++;
+ }
+ if(suma1>suma2)
+ {
+	document.write('Lista 1 mayor');
+ }
+ else
+ {
+	if(suma1==suma2)
+	{
+		document.write('Listas iguales')
+	}
+	else
+	{
+		document.write('Lista 2 mayor')
+	}
+ }
+</script>
+
+</body>
+</html>

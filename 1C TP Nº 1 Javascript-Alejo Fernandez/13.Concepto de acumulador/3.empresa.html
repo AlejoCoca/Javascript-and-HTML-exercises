@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+ var mayores=0, menores=0, total=0, i=0;
+ while(i<5)
+ {
+	sueldo=parseInt(prompt('Ingrese el sueldo del empleado numero '+(i+1),''));
+	if(sueldo>300)
+	{
+		mayores++
+	}
+	else
+	{
+		if(sueldo>100)
+		{
+			menores++
+		}
+	}
+	total=total+sueldo;
+	i++
+ }
+ document.write(mayores+' Empleados ganan mas de $300 <br>');
+ document.write(menores+' Empleados ganan entre $100 y $300 <br>');
+ document.write('La empresa gasta un total de $'+total+' en sueldos de empleados');
+</script>
+
+</body>
+</html>

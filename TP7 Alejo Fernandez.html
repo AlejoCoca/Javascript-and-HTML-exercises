@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+  function Suma(num)
+  {
+      var suma=0;
+      for(var n=num;n>=1;n=n/10-n%10/10)
+      {
+          suma+=n%10
+      }
+      return suma
+  }
+
+  function Mostrar(num)
+  {
+      vec= new Array(num.length)
+      for(var i=0, n=num;n>=1;n=n/10-n%10/10, i++)          // dentro de esta funcion despues de crear el vector tambien se podrian haber sumado
+      {                                                     // los digitos y asi se fucionarian las dos funciones del programa en una pero como la consigna
+          vec[i]=n%10                                       // decia que habia que hacer una funcion y un procedimiento lo hice asi
+      }
+      document.write(vec[vec.length-1])
+      for(var i=2; i<=vec.length; i++)
+      {
+          document.write("+",vec[vec.length-i])
+      }
+  }
+
+    num=parseInt(prompt('Ingrese un numero para sumar sus digitos',''));
+  while(num>0)
+  { 
+      document.write('El numero ingresado es : '+num+'<br>'); 
+      resultado=Suma(num)
+      document.write('La suma de los digitos es : ')
+      Mostrar(num)
+      document.write(' = '+resultado+'<br>')
+      num=parseInt(prompt('Ingrese un numero para sumar sus digitos',''));
+  }
+</script>

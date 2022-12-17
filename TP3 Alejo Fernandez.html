@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TP3 Alejo Fernandez</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+  function Esminimo(a,b)
+  {
+    if (a<b)
+    {
+      return a;
+    }
+    else{
+        return b;
+    }
+  }
+
+  num1=parseInt(prompt('Ingrese el primer numero',''));
+  num2=parseInt(prompt('Ingrese el segundo numero',''));
+  document.write('Los dos valores ingresados son '+num1+' y '+num2+'<br>');
+  menor=Esminimo(num1,num2);
+  document.write('El menor de los dos es :'+menor);
+</script>
+
+</body>
+</html>

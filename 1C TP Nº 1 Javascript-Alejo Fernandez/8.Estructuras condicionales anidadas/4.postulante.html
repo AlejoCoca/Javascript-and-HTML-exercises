@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+  var nombre=prompt('Ingrese el nombre','')
+  preg=parseInt(prompt('Ingrese la cantidad total de preguntas',''));
+  correc=parseInt(prompt('Ingrese la cantidad de preguntas respondidas correctamente',''));
+  var prom=correc*100/preg;
+  if (prom>=90)
+  {
+    document.write(nombre+' a obtenido un Nivel superior');
+  }
+  else
+  {
+    if (prom>=75)
+    {
+      document.write(nombre+' a obtenido un Nivel medio');
+    }
+    else
+    {
+      if (prom>=50)
+      {
+        document.write(nombre+' a obtenido un Nivel regular');
+      }
+      else
+      {
+        document.write(nombre+' a obtenido un Fuera de nivel');
+      }
+    }
+  }
+</script>
+
+</body>
+</html>

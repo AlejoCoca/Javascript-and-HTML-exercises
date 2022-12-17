@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+    
+
+  class CPersona {
+    constructor(nombre, edad, DNI, genero, peso, altura) {
+      this.nombre = nombre;
+      this.edad = edad;
+      this.dni = DNI;
+      this.genero = genero;
+      this.peso = peso;
+      this.altura = altura;
+    }
+
+    calcularIMC(){
+        if(peso/(altura*altura)<20)
+        {
+            return -1;
+        }
+        else{
+            if(peso/(altura*altura)>=20 && peso/(altura*altura)<=25)
+            {
+                return 0;
+            }
+            else{
+                if(peso/(altura*altura)>25)
+                {
+                    return 1;
+                }
+            }
+        }
+    }
+
+    imprimir() {
+      document.write(`Nombre: ${this.nombre}<br>`);
+      document.write(`Edad: ${this.edad}<br>`);
+    }    
+  }
+
+
+function construir()
+{
+    const persona1 = new CPersona(document.getElementById('1').value, document.getElementById('2').value)
+  alert('Su nombre es '+persona1.nombre)
+}
+
+function IMC()
+{
+    if(persona1.calcularIMC()<0)
+    {
+        alert("te huelen las patas")
+    }
+    else{
+        if(persona1.calcularIMC()>0)
+        {
+            alert("mondongo de pato")
+        }
+        else{
+            alert("caballos locos")
+        }
+    }
+}
+
+</script>
+
+<form>
+  Ingrese su nombre<br>
+  <input type="text" name="nombre" id="1"><br>
+  Ingrese su edad<br>
+  <input type="text" name="edad" id="2"><br>
+  Ingrese su DNI<br>
+  <input type="text" name="DNI" id="3"><br>
+  Ingrese su genero<br>
+  <input type="text" name="genero" id="4"><br>
+  Ingrese su altura<br>
+  <input type="text" name="altura" id="5"><br>
+  Ingrese su peso<br>
+  <input type="text" name="peso" id="6"><br>
+
+  <input type="button" value="enviar" onClick="construir()">
+
+</form>
+</body>
+</html>

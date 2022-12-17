@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+  sueldo=parseInt(prompt('Ingrese el sueldo del empleado',''));
+  antiguedad=parseInt(prompt('Ingrese la antiguedad del empleado',''));
+
+  if (sueldo<500 && antiguedad>=10)
+  {
+    document.write('Se le otorga un aumento del 20% <br>');
+    var sueldofinal=sueldo+sueldo*0.20; 
+    document.write('El sueldo total es:'+sueldofinal);
+  }
+  else
+  {
+    if (sueldo<500 && antiguedad<10)
+    {
+      document.write('Se le otorga un aumento del 5%');
+      document.write('<br>');
+      var sueldofinal=sueldo+sueldo*0.05; 
+      document.write('El sueldo total es:'+sueldofinal);
+    }
+    else 
+    {
+      document.write('El sueldo queda sin cambios:'+sueldo);      
+    }
+  }
+</script>
+
+</body>
+</html>

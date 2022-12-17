@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+  function EsPrimo(num)
+  {
+    for(var j=0, i=0;i<num;i++)
+    {
+        if(num%i==0)
+        {
+            j++
+            if(j>1)
+            {
+                return false
+            }
+        }
+    }
+    return true
+  }
+
+  numero=parseInt(prompt('Ingrese el numero',''));
+  document.write('El numero ingresado es : '+numero+'<br>'); 
+  var primo=EsPrimo(numero);
+  if(primo)
+  {
+      document.write("El numero es primo");
+  }
+  else{
+      document.write("El numero ingrsado no es primo");
+  }
+</script>

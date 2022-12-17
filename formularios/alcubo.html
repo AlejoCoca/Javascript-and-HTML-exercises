@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+function mostrar()
+{
+  var num=document.getElementById('numero').value;
+  alert('El numero ingresado es: '+num+' y el numero elevado al cubo es: '+num*num*num);
+}
+</script>
+
+<form>
+  Ingrese el numero:
+  <input type="text" id="numero"><br>
+  <input type="button" value="Confirmar" onClick="mostrar()">
+</form>
+</body>
+</html>

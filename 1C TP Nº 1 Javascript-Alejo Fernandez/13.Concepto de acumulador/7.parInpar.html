@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+ var pares=0, inpares=0, i=0;
+ while(i<5)
+ {
+	numero=parseInt(prompt('Ingrese un numero ',''));
+	if (numero%2==0)
+	{
+		pares++;
+	}
+	else
+	{
+		inpares++;
+	}
+	i++;
+ }
+ document.write('Numeros pares: '+pares+' <br>');
+ document.write('Numeros inpares: '+inpares);
+</script>
+
+</body>
+</html>

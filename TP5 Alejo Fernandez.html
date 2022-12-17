@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+  function Esmultiplode3(num)
+  {
+    if(num%3==0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+  }
+
+  numero=parseInt(prompt('Ingrese el numero',''));
+  document.write('El numero ingresado es : '+numero+'<br>'); 
+  multiplo=Esmultiplode3(numero);
+  if(multiplo)
+  {
+      document.write("El numero ingresado es un multiplo de 3");
+  }
+  else{
+      document.write("El numero no es multiplo de 3");
+  }
+</script>

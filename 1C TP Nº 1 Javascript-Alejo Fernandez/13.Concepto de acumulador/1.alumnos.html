@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+ var mayores=0, menores=0, i=0;
+ while(i<10)
+ {
+	nota=parseInt(prompt('Ingrese la nota del alumno numero '+(i+1),''));
+	if(nota>=7)
+	{
+		mayores++
+	}
+	else
+	{
+		menores++
+	}
+	i++
+ }
+ document.write(mayores+' alumnos tienen notas mayores o iguales a 7 <br>');
+ document.write(menores+' alumnos tienen notas menores a 7');
+</script>
+
+</body>
+</html>

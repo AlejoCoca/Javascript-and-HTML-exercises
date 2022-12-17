@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    input{
+border:none;
+background: transparent;
+border-bottom: solid 2px rgb(252, 5, 5);
+box-shadow: none;
+    }
+    .btn1{
+      background-color: blue;
+    }
+    .btn1:hover,
+    .btn1:active{
+      background-color: aqua;
+    }
+    .btn1:focus{
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+<script src="CPassword.js"></script>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+        <a class="navbar-brand" href="#">Tecnica 5</a>
+      
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="prueba.html">Inicio</a>
+          </li>
+        </ul>
+      </nav>
+
+    <div class="jumbotron text-center">
+        <div class="form">
+          <div class="hola">
+          <p>Ingrese su nombre de usuario</p>
+          <input class="btn1" type="text" name="usuario" id="1">
+          </div>
+          Ingrese la longitud de la clave (dejar en blanco y por defecto sera 8)<br>
+          <input type="text" name="clave" id="2"><br>
+          Ingrese su clave<br>
+          <input type="text" name="longitud" id="3"><br>
+        
+          <h4><input id="boton" class="boton mt-4 p-2" type="button" value="Enviar" onClick="construir()"></h4>
+                  
+        </div>
+      </div>
+      
+    
+    </body>
+    </html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+  function mostrarMenor(a,b,c)
+  {
+    if (a<b && a<c)
+    {
+      document.write('El menor de los tres valores es: '+a);
+    }
+    else
+    {
+      if (b<c)
+      {
+        document.write('El menor de los tres valores es: '+b);
+      }
+      else
+      {
+        document.write('El menor de los tres valores es: '+c);
+      }
+    } 
+  }
+  
+  num1=parseInt(prompt('Ingrese el primer numero',''));
+  num2=parseInt(prompt('Ingrese el segundo numero',''));
+  num3=parseInt(prompt('Ingrese el tercer numero',''));
+  mostrarMenor(num1,num2,num3);
+  
+</script>
+
+</body>
+</html>
